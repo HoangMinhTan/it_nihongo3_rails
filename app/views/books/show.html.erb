@@ -36,7 +36,7 @@
 <h2>Review List</h2>
 <ul>
   <% @book.book_review.each do |review| %>
-  <li> <%= review.review %> (<%= review.book_id %>) </li>
+  <li> <%= review.review %> (<%= review.user.name %>) </li>
   <% end %>
 </ul>
 
